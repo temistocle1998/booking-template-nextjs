@@ -102,7 +102,7 @@ export default function VerificationComptePage() {
       // Pour la démonstration, considérons que "123456" est un code valide
       if (fullCode === "123456") {
         // Rediriger vers la page d'accueil ou le tableau de bord
-        router.push("/");
+        router.push("/connexion");
       } else {
         setError("Code incorrect. Veuillez vérifier et réessayer.");
       }
