@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Eye, EyeOff, Lock, Mail, User, Phone, Briefcase } from "lucide-react";
 import PublicLayout from "./components/public/public-layout";
+import { useRouter } from "next/navigation";
 
 export default function InscriptionPage() {
   // États pour les champs du formulaire
@@ -117,7 +118,7 @@ export default function InscriptionPage() {
       password,
     });
   };
-
+  const router = useRouter();
   return (
     <PublicLayout>
       <main className="flex-1 bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -359,7 +360,11 @@ export default function InscriptionPage() {
               </div>
 
               <div className="pt-2">
-                <Button type="submit" className="w-full">
+                <Button
+                  type="submit"
+                  onClick={() => router.push("/verify-code")}
+                  className="w-full"
+                >
                   S'inscrire
                 </Button>
               </div>
