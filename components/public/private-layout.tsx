@@ -160,6 +160,27 @@ export default function PrivateLayout({
               Services
             </Link>
             <Link
+              href="/companyAddress"
+              className="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="mr-3 h-5 w-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Adresses
+            </Link>
+            <Link
               href="/billing"
               className="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-primary"
             >
