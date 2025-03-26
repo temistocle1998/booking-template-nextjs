@@ -78,7 +78,7 @@ export default function ConnexionPage() {
                   </Label>
                   <div className="text-sm">
                     <Link
-                      href="/reset-password"
+                      href="/forgot-password"
                       className="font-medium text-primary hover:text-primary/80"
                     >
                       Mot de passe oublié?
