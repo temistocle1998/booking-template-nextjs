@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Eye, EyeOff, Lock, Mail } from "lucide-react";
 import PublicLayout from "./components/public/public-layout";
+import { useRouter } from "next/navigation";
 
 export default function ConnexionPage() {
   const [email, setEmail] = useState("");
@@ -26,7 +27,7 @@ export default function ConnexionPage() {
       rememberMe,
     });
   };
-
+const router = useRouter()
   return (
     <PublicLayout>
       <main className="flex-1 flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -137,7 +138,7 @@ export default function ConnexionPage() {
               </div>
 
               <div>
-                <Button type="submit" className="w-full">
+                <Button onClick={() => router.push('/dashboard')} type="submit" className="w-full">
                   Se connecter
                 </Button>
               </div>

@@ -1,11 +1,12 @@
 import { Search } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import PublicLayout from "./components/public/public-layout"
+import { useRouter } from "next/navigation"
 
 export default function WelcomePage() {
+  const router = useRouter()
   return (
     <div>
       <PublicLayout>
@@ -108,7 +109,7 @@ export default function WelcomePage() {
                 </div>
 
                 <div className="flex items-end">
-                  <Button className="w-full md:w-auto" size="lg">
+                  <Button onClick={() => router.push('/recherche-professionnels')} className="w-full md:w-auto" size="lg">
                     <Search className="mr-2 h-4 w-4" />
                     Rechercher
                   </Button>
