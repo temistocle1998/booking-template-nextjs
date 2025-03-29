@@ -204,6 +204,52 @@ export default function PrivateLayout({
               Collaborateurs
             </Link>
             <Link
+              href="/professionals"
+              className="flex items-center px-4 py-2.5 text-sm font-medium text-primary hover:bg-gray-100 hover:text-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="mr-3 h-5 w-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              Professionnels
+            </Link>
+            <Link
+              href="/admin/users"
+              className="flex items-center px-4 py-2.5 text-sm font-medium text-primary hover:bg-gray-100 hover:text-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="mr-3 h-5 w-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              Utilisateurs
+            </Link>
+            <Link
               href="/billing"
               className="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-primary"
             >
