@@ -1,6 +1,6 @@
 // "use client"
 
-import SearchResults from "@/search-bar-professionnels"
+import SearchResults from "@/app/recherche-professionnels/search-bar-professionnels"
 import { useState, useEffect, Suspense } from "react"
 
 

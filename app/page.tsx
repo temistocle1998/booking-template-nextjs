@@ -1,7 +1,6 @@
 "use client"
 
-import WelcomePage from "@/welcome-page"
-import ConnexionPage from "../connexion-page"
+import WelcomePage from "@/welcome"
 
 export default function SyntheticV0PageForDeployment() {
   return <WelcomePage />

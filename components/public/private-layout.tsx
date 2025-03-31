@@ -357,8 +357,8 @@ export default function PrivateLayout({
           onClick={() => setSidebarOpen(false)}
         ></div>
       )}
-      <div className="flex flex-1 flex-col overflow-hidden">
-        <header className="bg-white shadow">
+      <div className="flex flex-1 flex-col">
+        <header className="bg-white shadow sticky top-0 z-10">
           <div className="flex h-16 items-center justify-between px-4">
             <div className="flex items-center">
               <button
@@ -402,7 +402,7 @@ export default function PrivateLayout({
               </div>
             </div>
           </div>
-        </header>{" "}
+        </header>
         {children}
       </div>
     </div>
