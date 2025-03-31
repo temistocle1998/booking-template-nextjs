@@ -377,7 +377,6 @@ export default function ListeServices() {
 
   return (
     <PrivateLayout>
-
         {/* Main content */}
         <main className="flex-1 overflow-y-auto bg-gray-100 p-4 md:p-6">
           <div className="mx-auto max-w-7xl">

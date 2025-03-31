@@ -73,7 +73,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-import PrivateLayout from "./components/public/private-layout";
+import PrivateLayout from "@/components/public/private-layout";
 
 // Types
 type Client = {

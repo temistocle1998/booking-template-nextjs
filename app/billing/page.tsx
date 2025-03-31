@@ -24,7 +24,7 @@ import {
 } from "@/components/ui/dialog"
 import { Switch } from "@/components/ui/switch"
 import { Separator } from "@/components/ui/separator"
-import PrivateLayout from "./components/public/private-layout"
+import PrivateLayout from "@/components/public/private-layout"
 
 // Types
 type Transaction = {
