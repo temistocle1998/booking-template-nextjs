@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Progress } from "@/components/ui/progress";
-import PublicLayout from "./components/public/public-layout";
+import PublicLayout from "@/components/public/public-layout";
 
 export default function ReinitialisationMotDePassePage() {
   const [password, setPassword] = useState("");
@@ -41,7 +41,7 @@ export default function ReinitialisationMotDePassePage() {
     // const tokenFromUrl = params.get('token')
 
     // Pour la démonstration, on simule un token
-    const tokenFromUrl = "valid-token-123";
+    const tokenFromUrl: string = "valid-token-123";
     setToken(tokenFromUrl);
 
     // Vérifier la validité du token (simulé)
